@@ -1,4 +1,4 @@
-all: 0_1_back prim threeZS kruskal zyzz n_queens traceable
+all: 0_1_back prim threeZS kruskal zyzz n_queens traceable hw_TSP TSP
 
 clean:
 	rm -f 0_1_back
@@ -8,6 +8,8 @@ clean:
 	rm -f zyzz
 	rm -f n_queens
 	rm -f traceable
+	rm -f hw_TSP
+	rm -f TSP
 
 0_1_back: 0_1_back.cpp
 	g++ -Wall 0_1_back.cpp -o 0_1_back
@@ -23,3 +25,7 @@ n_queens: n_queens.cpp
 	g++ -Wall n_queens.cpp -o n_queens
 traceable: traceable.cpp
 	g++ -Wall traceable.cpp -o traceable -std=c++11
+hw_TSP: hw_TSP.cpp
+	g++ -Wall hw_TSP.cpp -o hw_TSP -std=c++11
+TSP: TSP.cpp
+	g++ -Wall TSP.cpp -o TSP -std=c++11
